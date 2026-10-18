@@ -469,7 +469,7 @@ def handle_event(event):
     if text in ["/說明", "/help"]:
         reply_message(
             reply_token,
-            "📒 記帳小天才｜使用說明\n\n"
+            "📒 記帳小工具｜使用說明\n\n"
             "直接記帳（預設支出）：\n早餐 100\n昨天的早餐 100\n前天停車費 80\n\n"
             "收入：\n收入 薪資 30000\n\n"
             "刷卡：\n刷卡 午餐 150\n昨天刷卡 交通 120\n\n"
@@ -531,7 +531,7 @@ def callback():
 
 @app.route("/", methods=["GET"])
 def health():
-    return "✅ 記帳小天才運作中"
+    return "✅ 記帳小工具運作中"
 
 
 if __name__ == "__main__":
